@@ -11,11 +11,11 @@ The goal of this project is to demonstrate practical expertise in structured tes
 
 This portfolio is structured to showcase the core testing artifacts developed for the OWASP Juice Shop project. Each directory contains the technical documentation for specific phases of the QA lifecycle:
 
-* **[01-Requisitos-BDD](./01-Requisitos-BDD/)**: User stories, behavior-driven development scenarios, and acceptance criteria.
-* **[02-Plano de Teste](./02-Plano-de-Teste/)**: Testing scope, objectives, environment strategy, and resource planning.
-* **[03-Suíte de Teste de Fumaça](./03-Suíte-de-Teste-de-Fumaça/)**: High-priority test cases to ensure core stability after build deployments.
-* **[04-Conjunto de Testes de Regressão](./04-Conjunto-de-Testes-de-Regressão/)**: Comprehensive test suite covering critical pathways and boundary conditions.
-* **[05-Relatórios de Execução de Testes](./05-Relatórios-de-Execução-de-Testes/)**: Execution metrics, bug reports, and final quality assessment results.
+* **01-Requisitos-BDD**: User stories, behavior-driven development scenarios, and acceptance criteria.
+* **02-Plano de Teste**: Testing scope, objectives, environment strategy, and resource planning.
+* **03-Suíte de Teste de Fumaça**: High-priority test cases to ensure core stability after build deployments.
+* **04-Conjunto de Testes de Regressão**: Comprehensive test suite covering critical pathways and boundary conditions.
+* **05-Relatórios de Execução de Testes**: Execution metrics, bug reports, and final quality assessment results.
 
 ---
 
