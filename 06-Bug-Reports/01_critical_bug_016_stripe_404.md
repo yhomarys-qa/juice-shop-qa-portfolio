@@ -15,7 +15,7 @@
 
 ---
 
-## 👣 Steps to Reproduce
+## 🧪 Steps to Reproduce
 1. Access the "My Payment Options" page.
 2. Navigate down to the "Other Payment Options" section.
 3. Locate the designated "Donations" area.
