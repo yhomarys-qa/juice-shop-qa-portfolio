@@ -41,4 +41,6 @@ The application breaks its internal routing logic, immediately redirecting the a
 ---
 
 ## 📎 Attachments
-- `screenshot_stripe_404_error.png`: Demonstrates the `404 Not Found` layout immediately following the click interaction.
+- Screenshot demonstrating `404 Not Found` page after clicking the [Stripe Credit Card] button
+
+<img width="1918" height="1198" alt="BUG-016 Screenshot demonstrates 404 Not Found page after clicking the  Stripe Credit Card  button" src="https://github.com/user-attachments/assets/0a61b8de-7be1-46fc-8857-d94e8fe74395" />
