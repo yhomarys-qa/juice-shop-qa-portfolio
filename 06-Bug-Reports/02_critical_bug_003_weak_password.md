@@ -46,4 +46,6 @@ The boundary validation layer completely ignores complexity specifications. The 
 ---
 
 ## 📎 Attachments
-- `video_registration_security_bypass.mp4`: Screen recording demonstrating registration execution with insecure credential configurations.
+- Screen recording demonstrating password validation failure during user registration
+
+https://1drv.ms/v/c/908f21af6642c0ae/IQAT0Nk5hj5zRbVk3936xHOIAUS1Qq-GDNtPDcI-TVTglO0?e=61VNs9
