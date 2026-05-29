@@ -1,68 +1,34 @@
-# language: en
-@Smoke
-Feature: 💨 Smoke Test Suite - Core E-Commerce Flow
-  As a QA Engineer
-  I want to execute the critical path scenarios of the OWASP Juice Shop
-  So that I can quickly verify if the application deployment is stable and major features work
+# 💨 Smoke Test Suite - Critical Path Validation
 
-  # ==========================================
-  # 01 - AUTHENTICATION MODULE
-  # ==========================================
+## 📌 Overview
+The Smoke Test Suite is a curated selection of critical path scenarios designed to verify the basic health and stability of the OWASP Juice Shop application. It runs immediately after code deployments or environment resets to ensure that core user journeys are completely functional before deeper testing begins.
 
-  Scenario: 📝 Smoke 01 - Critical User Registration
-    Given I am on the application login page
-    When I click on the "Not yet a customer?" link
-    And I enter a unique email address
-    And I enter a valid password conforming to security rules
-    And I repeat the identical password in the "Repeat Password" field
-    And I select a security question and provide an answer
-    And I click the "Register" button
-    Then the system should display a success message "Registration completed successfully"
+---
 
-  Scenario: 🎯 Smoke 02 - Critical User Login
-    Given I am on the application login page
-    When I enter a valid and registered email
-    And I enter the correct corresponding password
-    And I click the "Log in" button
-    Then I should be redirected to the homepage
-    And I should see my profile as authenticated
+## 🧭 Execution Strategy
+- **Frequency:** Executed upon every environment deployment or state reset.
+- **Scope:** High-level "happy path" workflows covering end-to-end user transactions.
+- **Target Execution Time:** Less than 5 minutes (when executed manually).
+- **Environment:** Clean application state with default seed data.
 
-  # ==========================================
-  # 02 & 03 - SEARCH & CATALOG MODULES
-  # ==========================================
+---
 
-  Scenario: 🔍 Smoke 03 - Core Product Search Execution
-    Given I am on the main page of the application
-    When I click on the search icon in the header
-    And I type "APPLE" into the search field
-    And I press enter or execute the search
-    Then the system should filter the catalog grid
+## 📋 Mapped Scenarios & Expected Behaviors
 
-  # ==========================================
-  # 04 - SHOPPING CART MODULE
-  # ==========================================
+This suite pulls the most critical behaviors defined in the `01-Requirements-BDD/` directory into a single, rapid execution cycle:
 
-  Scenario: ➕ Smoke 04 - Core Add Item to Basket
-    Given I am logged into my account
-    And I am browsing the product catalog
-    When I click the "Add to Basket" button on a product card
-    Then the cart item counter in the header should increase by 1
+### 🔐 1. Access Integrity
+* **Scenario 01 – User Registration:** Validates that a brand-new customer can fill out credentials, select a security question, and successfully register an account.
+* **Scenario 02 – User Login:** Ensures that a registered user can successfully authenticate and access their private profile view.
 
-  # ==========================================
-  # 05 - CHECKOUT MODULE
-  # ==========================================
+### 🔍 2. Product Discovery
+* **Scenario 03 – Product Search:** Verifies that the global header search function expands, accepts input (e.g., "APPLE"), and successfully filters the main catalog grid.
 
-  Scenario: 💳 Smoke 05 - End-to-End Purchase Finalization
-    Given I am logged into my account
-    And I have valid products inside my shopping cart
-    And I am on the shopping cart page
-    When I click the "Checkout" button
-    And I select an existing delivery address radio button
-    And I click the "Continue" button
-    And I select the "Standard Delivery" speed option
-    And I click the "Continue" button
-    And I select a valid credit card option
-    And I click the "Continue" button
-    And I click the "Place your order and pay" button
-    Then I should be redirected to the Order Completion page
-    And the system must display a success message "Thank you for your purchase!"
+### 🛒 3. Transactional Flow
+* **Scenario 04 – Add to Basket:** Confirms that clicking the "Add to Basket" button triggers the confirmation message and increments the global cart counter.
+* **Scenario 05 – End-to-End Purchase:** Validates the entire checkout pipeline in a single thread (Address Selection $\rightarrow$ Delivery Speed $\rightarrow$ Payment $\rightarrow$ Final Order Confirmation).
+
+---
+
+## 🛑 Critical Blockers (Stop-Test Criteria)
+If any scenario within this suite **FAILS**, the application is considered unstable. Testing must be halted immediately, a critical bug must be raised in `06-Bug-Reports/`, and the build should be rejected.
