@@ -1,47 +1,47 @@
-# language: pt
-Funcionalidade: Autenticação de Usuário (Login)
-  Como um cliente cadastrado do OWASP Juice Shop
-  Quero inserir minhas credenciais na tela de login
-  Para acessar minha conta, visualizar meu perfil e finalizar compras
+# language: en
+Feature: 🔐 User Authentication (Login)
+  As a registered customer of OWASP Juice Shop
+  I want to enter my credentials on the login page
+  So that I can access my account, view my profile, and complete purchases
 
-  Contexto: Instalação do Sistema
-    Dado que estou na tela de login da aplicação
+  Background: System Setup
+    Given I am on the application login page
 
-  Cenário: Login com sucesso
-    Quando insiro um e-mail válido e cadastrado
-    E insiro a senha correta correspondente
-    E clico no botão "Log in"
-    Então devo ser redirecionado para a página inicial (Homepage)
-    E devo visualizar o meu perfil como autenticado
+  Scenario: 🎯 Successful login
+    When I enter a valid and registered email
+    And I enter the correct corresponding password
+    And I click the "Log in" button
+    Then I should be redirected to the homepage
+    And I should see my profile as authenticated
 
-  Cenário: Submissão com campos vazios
-    Quando deixo os campos "Email" e "Senha" em branco
-    E tento submeter o formulário
-    Então as mensagens de obrigatoriedade dos campos devem ser exibidas
-    E o botão "Log in" deve permanecer desabilitado
+  Scenario: ❌ Submission with empty fields
+    When I leave the "Email" and "Password" fields blank
+    And I attempt to submit the form
+    Then mandatory field error messages should be displayed
+    And the "Log in" button should remain disabled
 
-  Cenário: Validação de formato de e-mail inválido
-    Quando insiro um texto fora do formato padrão "usuario@dominio.com" no campo "Email"
-    Então o sistema deve exibir uma mensagem de erro impeditiva
-    E o botão "Log in" deve ser desabilitado
+  Scenario: ⚠️ Invalid email format validation
+    When I enter a text outside the standard "user@domain.com" format in the "Email" field
+    Then the system should display a blocking error message
+    And the "Log in" button should be disabled
 
-  Cenário: Tentativa de login com credenciais incorretas
-    Quando insiro um e-mail não cadastrado ou uma senha incorreta
-    E clico no botão "Log in"
-    Então o sistema deve exibir a mensagem de erro genérica "Invalid email or password"
-    E o acesso à conta deve ser impedido
+  Scenario: 🚫 Login attempt with incorrect credentials
+    When I enter an unregistered email or an incorrect password
+    And I click the "Log in" button
+    Then the system should display the generic error message "Invalid email or password"
+    And account access should be prevented
 
-  Cenário: Mascaramento e alternância de visibilidade da senha
-    Quando digito os caracteres no campo "Senha"
-    Então o texto deve ser mascarado por padrão por asteriscos ou bolinhas
-    Quando clico no botão de alternância (ícone do olho)
-    Então o texto da senha deve ser revealed em formato aberto
+  Scenario: 👁️ Password masking and visibility toggle
+    When I type characters into the "Password" field
+    Then the text should be masked by default by asterisks or bullets
+    When I click the visibility toggle button (eye icon)
+    Then the password text should be revealed in plain text
 
-  Cenário: Submissão do formulário via teclado
-    Quando preencho os campos "Email" e "Senha" com dados válidos
-    E pressiono a tecla "Enter" no teclado
-    Então o formulário deve ser submetido exatamente como se tivesse clicado em "Log in"
+  Scenario: ⌨️ Form submission via keyboard
+    When I fill in the "Email" and "Password" fields with valid data
+    And I press the "Enter" key on my keyboard
+    Then the form should be submitted exactly as if the "Log in" button was clicked
 
-  Cenário: Navegação para fluxos alternativos
-    Quando visualizo a parte inferior da tela de login
-    Então devo conseguir clicar nos links "Forgot Password" e "Not yet a customer?" para ser redirecionado às respectivas telas
+  Scenario: 🔄 Navigation to alternative flows
+    When I view the bottom of the login page
+    Then I should be able to click on the "Forgot Password" and "Not yet a customer?" links to be redirected to their respective pages
