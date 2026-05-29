@@ -14,7 +14,7 @@
 
 ---
 
-## 👣 Steps to Reproduce
+## 🧪 Steps to Reproduce
 1. Open the Registration form page.
 2. Enter a weak password containing exclusively lowercase text characters (e.g., `passwordtest`).
 3. Populate all remaining mandatory fields with valid, syntactically correct information.
