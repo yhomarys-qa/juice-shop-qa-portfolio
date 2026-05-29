@@ -10,9 +10,9 @@
 ---
 
 ## 🔍 Preconditions
-- User account must be previously registered and active.
-- User is currently visiting the application Login interface.
-
+- User account must be registered
+- User must be on the Login page
+  
 ---
 
 ## 🧪 Steps to Reproduce
