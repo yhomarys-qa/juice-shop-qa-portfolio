@@ -46,7 +46,7 @@ A full functional and regression test suite was executed against the target envi
 ---
 
 ## 👨‍💻 Author & Contact
-- **Your Name** - Software Quality Assurance Engineer / Tester
+- Yhomarys Pinzón
 - LinkedIn: https://www.linkedin.com/in/yhomarys-qa
 - Email: yhomaryspinzon@gmail.com
 
