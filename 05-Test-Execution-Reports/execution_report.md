@@ -22,12 +22,12 @@ The matrix below details the distribution of the 400 test cases executed across 
 
 | Module / Feature | Executed | Passed | Failed | Defects Linked |
 | :--- | :---: | :---: | :---: | :--- |
-| **Login (Authentication)** | 46 | 43 | 3 | BUG-002 |
+| **Login (Authentication)** | 46 | 43 | 3 | BUG-001, BUG-002 |
 | **Registration** | 42 | 34 | 8 | BUG-003, BUG-004 |
-| **Product Catalog** | 53 | 51 | 2 | BUG-014 |
-| **Product Search** | 30 | 26 | 4 | BUG-015 |
+| **Product Catalog** | 53 | 51 | 2 | BUG-007 |
+| **Product Search** | 30 | 26 | 4 | BUG-005, BUG-006 |
 | **Shopping Cart** | 20 | 20 | 0 | None |
-| **Checkout & Payment** | 209 | 178 | 31 | BUG-001, BUG-005 to BUG-013 |
+| **Checkout & Payment** | 209 | 178 | 31 | BUG-008 to BUG-016 |
 | **Total** | **400** | **352** | **48** | **16 Defects** |
 
 ---
