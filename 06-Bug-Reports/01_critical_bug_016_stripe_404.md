@@ -10,9 +10,9 @@
 ---
 
 ## 🔍 Preconditions
-- User is authenticated within the application.
-- User has navigated directly to the "My Payment Options" screen and located the "Other Payment Options" section.
-
+- User is authenticated
+- User is on the "My Payment Options" page
+  
 ---
 
 ## 🧪 Steps to Reproduce
