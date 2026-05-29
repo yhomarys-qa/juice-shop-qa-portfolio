@@ -15,7 +15,7 @@
 
 ---
 
-## 👣 Steps to Reproduce
+## 🧪 Steps to Reproduce
 1. Open the application Login interface.
 2. Inputs valid, active user account credentials.
 3. Check the **"Remember me"** checkbox selection flag.
