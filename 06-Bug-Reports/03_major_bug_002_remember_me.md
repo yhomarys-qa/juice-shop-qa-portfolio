@@ -44,4 +44,6 @@ The active session payload is dropped entirely when the window terminates. The u
 ---
 
 ## 📎 Attachments
-- `screenshot_auth_eviction.png`: Visual proof showing the user redirected back to the login path instead of seeing an active session profile dashboard.
+- Screenshot showing that the user is redirected to the Login page after browser restart despite enabling the "Remember me" option
+
+<img width="1918" height="1157" alt="BUG-002 Screen recording demonstrates session is not preserved after browser restart when Remember me option is enabled" src="https://github.com/user-attachments/assets/38ace783-14d8-4b8e-b77d-a6043df8e1a1" />
