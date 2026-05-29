@@ -12,18 +12,12 @@ The goal of this project is to demonstrate practical expertise in structured tes
 The project is meticulously organized into 6 distinct core folders, mapping out the entire testing lifecycle chronologically. Click on any section link below to audit the dedicated technical documentation:
 
 1. **[01-Project-Charter-and-Context](./01-Project-Charter-and-Context/)**
-   - The foundational alignment document defining business logic, test objectives, team scopes, constraints, environments, and strategic definitions.
 2. **[02-Functional-Test-Matrix](./02-Functional-Test-Matrix/)**
-   - The architectural structural baseline mapping features, interaction paths, and explicit test coverage modules to prevent gaps.
 3. **[03-MindMaps-Requirements-and-Scenarios](./03-MindMaps-Requirements-and-Scenarios/)**
-   - Visual heuristic models mapping out operational workflows, registration fields, and behavioral exploratory test scenarios.
 4. **[04-Regression-Test-Suite](./04-Regression-Test-Suite/)**
-   - A detailed repository of comprehensive test cases, boundary analysis scenarios, equivalence partitioning configurations, and expected results.
 5. **[05-Test-Execution-Reports](./05-Test-Execution-Reports/)**
-   - The formal executive metrics summarizing the 400 test case executions, calculation matrices, and overall build status.
 6. **[06-Bug-Reports](./06-Bug-Reports/)**
-   - The engineering defect log containing the 16 registered bugs, alongside deep-dive, high-severity reports complete with technical replication steps.
-
+   
 ---
 
 ## 📈 High-Level Execution Metrics & Results
