@@ -10,7 +10,7 @@
 ---
 
 ## 🔍 Preconditions
-- User must be an unauthenticated guest positioned on the core Registration page.
+- User must be on the Registration page
 
 ---
 
