@@ -19,7 +19,7 @@
 1. Access the "My Payment Options" page.
 2. Navigate down to the "Other Payment Options" section.
 3. Locate the designated **"Donations"** area.
-4. Click firmly on the **[Stripe Credit Card]** button to initiate a user donation.
+4. Click on the **[Stripe Credit Card]** button to initiate a user donation.
 
 ---
 
